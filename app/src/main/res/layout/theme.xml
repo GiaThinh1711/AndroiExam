@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EmployeeApp"
+        android:textColor="@color/white"
+        android:background="#716E6E"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EmployeeApp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/eName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="#FFFFFF"
+        android:hint="Enter Employee Name"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/eDestination"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="#FFFFFF"
+        android:hint="Enter Destination"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/eSalary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="#FFFFFF"
+        android:hint="Enter Salary"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_marginLeft="10sp"
+            android:backgroundTint="#AEAEAE"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:textSize="11dp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:layout_marginLeft="10sp"
+            android:backgroundTint="#AEAEAE"
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Record"
+            android:textSize="11dp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:layout_marginLeft="10sp"
+            android:backgroundTint="#AEAEAE"
+            android:id="@+id/btDelete"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@color/black"
+             />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="10sp"
+        android:id="@+id/rcv_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
